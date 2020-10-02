@@ -14,6 +14,7 @@ import { SortBy } from '../../redux/reducers/filters';
 // Actions
 import { fetchElectronics, Item } from '../../redux/actions/electronics';
 import { setSortBy } from '../../redux/actions/filters';
+import { AddToCart, ItemInCart } from '../../redux/actions/cart';
 
 const sortItems = [
   { name: 'rating', order: 'desc'},
@@ -34,6 +35,8 @@ const Home: React.FC = () => {
     dispatch(setSortBy(type));
   };
 
+  const onAddToCart = (obj: ItemInCart) => dispatch(AddToCart(obj));
+
   return (
     <Wrapper>
       <Slider />
@@ -44,7 +47,7 @@ const Home: React.FC = () => {
             <SortByPopup activeSortType={sortBy.name} items={sortItems} onClickSortType={onSelectSortType} />
           </Row>
           <Row>
-            {items ? items.map((item: Item) => <CardItem key={item.id} item={item} />) : null}
+            {items ? items.map((item: Item) => <CardItem key={item.id} item={item} onAddToCart={onAddToCart} />) : null}
           </Row>
         </Container>
       </main>

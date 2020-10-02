@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { setCategory } from '../../redux/actions/filters';
 // Bootstrap
 import { Button, Container, Form, FormControl, Nav, Navbar, Row } from 'react-bootstrap';
 // Images
 import logoPng from '../../assets/img/logo.png';
 // Styles
 import { Wrapper } from './Header.styles';
-import { useDispatch } from 'react-redux';
-import { setCategory } from '../../redux/actions/filters';
+// Types
+import { RootState } from '../../redux/reducers';
 
 type Props = {
   categories: Array<string>
@@ -15,6 +17,8 @@ type Props = {
 
 const Header: React.FC<Props> = ({ categories }) => {
   const dispatch = useDispatch();
+  const totalCount = useSelector((state: RootState) => state.cart.totalCount);
+
   const handleCategory = (category: number | null) => dispatch(setCategory(category));
 
   return (
@@ -61,7 +65,7 @@ const Header: React.FC<Props> = ({ categories }) => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  <span style={{ marginLeft: '25px' }}>0</span>
+                  <span style={{ marginLeft: '25px' }}>{totalCount}</span>
                 </Button>
               </Link>
             </Row>
