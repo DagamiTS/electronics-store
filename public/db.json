@@ -31,13 +31,15 @@
           "id": 0,
           "title": "SUCH AN AMAZING CHOICE",
           "text": "This is so amazing and I must say this was t best choice Ive made, great price. My Son loves it, plays his game on it and very happy. I would recommend everyone to choose this one. Shipping was a little disappointing but overall it was worth the wait.",
-          "rating": 5
+          "rating": 5,
+          "name": "William"
         },
         {
           "id": 1,
           "title": "Great tv for a great price",
           "text": "Fantastic price, delivered on time, super easy set up, fantastic picture. The tv is too new to know if there will be problems, but it works great. I don't like the streaming menu configuration as much as my Roku, but it all works great.",
-          "rating": 4
+          "rating": 4,
+          "name": "James"
         }
       ]
     },
@@ -70,13 +72,15 @@
           "id": 0,
           "title": "Perfect !!!",
           "text": "This 55 inch QLED exceeded our expectations. We are using it in a bedroom and the picture quality is outstanding. I used the same picture settings as my larger QLED and the 43 inch looks almost the same. Very satisfied with the Apps available. We also like the fact that you can go directly to Amazon Prime with a single button push on the remote. Overall, very satisfied with this product for the price.",
-          "rating": 5
+          "rating": 5,
+          "name": "Harper"
         },
         {
           "id": 1,
           "title": "Redline",
           "text": "As soon as I turned on this TV for the first time, I noticed a red in color vertical line showing from top to bottom about 10\" from the left side of the screen. Unit was to be repaired by Samsung authorized service, but the part is not available. Samsung has promised to exchange. Still waiting on the details for the exchange.",
-          "rating": 1
+          "rating": 1,
+          "name": "Mason"
         }
       ]
     },
@@ -110,13 +114,15 @@
           "id": 0,
           "title": "Super Super Impressive!!!!",
           "text": "Super Super impressive with this lil machine so far!!! I ordered it because my old lappy gave in with working from home during this pandemic. The set up of this new HP was a breeze. It stays charged all day. Its 8pm and Im still on 47% charge. Its very quiet, no sound except my fingers hitting the keyboard. I have external mouse as Im never fond of a mouse pad on any laptop... I recommend this lappy to anyone considering.",
-          "rating": 5
+          "rating": 5,
+          "name": "Miranda"
         },
         {
           "id": 1,
           "title": "Best Laptop Without All The Bells And Whistles A+",
           "text": "This laptop is great for only surfing the web and paying bills and storing pictures without all the junk that comes with laptops. I think its a awesome price and give it 5 stars and a A+",
-          "rating": 5
+          "rating": 5,
+          "name": "Ella"
         }
       ]
     },
@@ -152,13 +158,15 @@
           "id": 0,
           "title": "Looking for a great reason to buy a new laptop?",
           "text": "So far I have no regrets about purchasing the Lenovo IdeaPad 3 its purpose in which I'm using it for. Being a Social Media Strategist running my E-commerce store. From the specifications to education; not to mention having a way the ability to continue learning different ways to repay for my investment",
-          "rating": 5
+          "rating": 5,
+          "name": "Jackson"
         },
         {
           "id": 1,
           "title": "Expensive",
           "text": "The laptop is great for low level gaming. I was disappointed to see only one ram slot, and the base cover should have more vents. Screens fine, keyboards fine. I think that it's a little expensive for the amount of storage and ram. I like it. It might be my WiFi but I usually get around 3000 ping on Roblox FPS .games.",
-          "rating": 3
+          "rating": 3,
+          "name": "Avery"
         }
       ]
     },
@@ -184,13 +192,15 @@
           "id": 0,
           "title": "Love my note 10",
           "text": "So I had the chance to upgrade my phone which was an iPhone. Having the experience of both apple and Samsung. I decided to get the note 10 from the Commercials it was coming out in. My first samsung was a note actually and I have to say the note 10 has to be the best decision I've ever made. Samsung made this note 10 beautifully",
-          "rating": 5
+          "rating": 5,
+          "name": "Jack"
         },
         {
           "id": 1,
           "title": "HARDWARE NOT THE BEST",
           "text": "I've had this phone now for less than 6 months and the side button is almost broken , it doesn't even click like it's supposed to, my carrier wants me to pay a deductible to get it fixed not even six months this is ridiculous, this should be covered.",
-          "rating": 4
+          "rating": 4,
+          "name": "Scarlett"
         }
       ]
     },
@@ -219,13 +229,15 @@
           "id": 0,
           "title": "It won't let you down !",
           "text": "one of the best phone in the market right now with all the tweaks and fixes from s20 ultra (i am s20 ultra user as well). overall i am satisfied with the performance but only suggestion is if it also sports 16gb ram for 512gb variant like s20 ultra it would be high-end device in specs. other than autifocus i see s20 ultra and note 20 ultra camera are same in performance wise.",
-          "rating": 5
+          "rating": 5,
+          "name": "Madison"
         },
         {
           "id": 1,
           "title": "Battery life is a problem",
           "text": "great phone overall, however even with a case, the camera is huge, no screen proctor this time, the battery is the main problem, didn't expect this kind of performance from a note.",
-          "rating": 3
+          "rating": 3,
+          "name": "Eleanor"
         }
       ]
     },
@@ -249,13 +261,15 @@
           "id": 0,
           "title": "Best tablet on the market",
           "text": "I needed a tablet to travel to and from work that would be compatible with my phone. I got the Galaxy Tab S6 10.5\", 128GB, Mountain Gray (Wi-Fi) with S Pen. I LOVE IT! It has a super defined screen. The apps are exactly like my phone. It is a tablet like no other.",
-          "rating": 5
+          "rating": 5,
+          "name": "Wyatt"
         },
         {
           "id": 1,
           "title": "I absolutely love this thing!!",
           "text": "This thing is awesome!! It even talks to you through the setup. Easy to use. Light weight. I love that it has a pen included so I don't get the screen all messy. I've had other tablets in the past, but this one by far is my favorite. If your looking for a new tablet this one is for you. It takes great photos too.",
-          "rating": 5
+          "rating": 5,
+          "name": "Carter"
         }
       ]
     },
@@ -279,13 +293,15 @@
           "id": 0,
           "title": "The iPad Pro is a 5 star device.",
           "text": "I am very satisfied with my new device. It is all I thought it’d be, and quite the technological upgrade for me. Distance learning just got easier.",
-          "rating": 5
+          "rating": 5,
+          "name": "Julian"
         },
         {
           "id": 1,
           "title": "Not what I expected",
           "text": "Back cover is made of weak material. It is supposed to have a faster processor, yet my old device was better when dealing with refreshing graphics. It freezes constantly. This is the last Ipad.",
-          "rating": 1
+          "rating": 1,
+          "name": "Hazel"
         }
       ]
     },
@@ -310,13 +326,15 @@
           "id": 0,
           "title": "",
           "text": "The HD280 PRO headphones are, phenomenal. With Hertz levels down to 10hz at this price,these cans can't be beat.",
-          "rating": 5
+          "rating": 5,
+          "name": "Grayson"
         },
         {
           "id": 1,
           "title": "Unsure of",
           "text": "Interesting buy. Had to configure the headphones and my phone settings when plugged in because the sound would be quiet or loud. I assume it's the same for PC but I never had the chance to try it. Even on my head it felt rather heavy.",
-          "rating": 3
+          "rating": 3,
+          "name": "Lily"
         }
       ]
     },
@@ -340,13 +358,15 @@
           "id": 0,
           "title": "Best In Class",
           "text": "I loved it. I got it for a friends birthday, and she was thrilled. The ammount of accessories in the box was unexpected and everything was extremely well packaged. That made her day. Thank you. I HIGHLY recommend them to anyone and everyone I know. This is perfect. 12/10. I loved it, and thank you guys!",
-          "rating": 5
+          "rating": 5,
+          "name": "Ellie"
         },
         {
           "id": 1,
           "title": "Get these headphones!",
           "text": "My hubby LOVES these headphones! He got them as a birthday gift. Fantastic sound quality, sturdy construction, and he likes the \"locking\" cord, so it can be switched out or replaced. He uses them with his computer games and to listen to music.",
-          "rating": 5
+          "rating": 5,
+          "name": "Lillian"
         }
       ]
     },
@@ -370,13 +390,15 @@
           "id": 0,
           "title": "We love it",
           "text": "Works great, and preferably for the gameroom.",
-          "rating": 5
+          "rating": 5,
+          "name": "Lincoln"
         },
         {
           "id": 1,
           "title": "Awesome",
           "text": "I love my PS4 pro great graphics and fast load times and access to hundreds of games you can't go wrong chooseing the PS4 pro definitely give it a try and see for yourself but it's best to play it on a 4k tv for the best graphics and features.",
-          "rating": 5
+          "rating": 5,
+          "name": "Addison"
         }
       ]
     },
@@ -399,13 +421,15 @@
           "id": 0,
           "title": "Great for young kids",
           "text": "This was a good buy for me. My boys already have other systems and I felt like spending a lot of money on another system was a waste of money. With this system, I got to save some money and they got they're xbox one.",
-          "rating": 5
+          "rating": 5,
+          "name": "Christian"
         },
         {
           "id": 1,
           "title": "Great Birthday gift",
           "text": "Was bought for my nephew. Just know he has only comes out of the room to use the bathroom and to eat only. You would never know he was home",
-          "rating": 5
+          "rating": 5,
+          "name": "Hudson"
         }
       ]
     }

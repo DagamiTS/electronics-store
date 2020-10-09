@@ -11,15 +11,17 @@ import { Wrapper } from './Home.styles';
 // Types
 import { RootState } from '../../redux/reducers';
 import { SortBy } from '../../redux/reducers/filters';
+import { ItemInCart } from '../../redux/actions/cart';
+import { Item } from '../../redux/actions/electronics';
 // Actions
-import { fetchElectronics, Item } from '../../redux/actions/electronics';
+import { fetchElectronics } from '../../redux/actions/electronics';
 import { setSortBy } from '../../redux/actions/filters';
-import { AddToCart, ItemInCart } from '../../redux/actions/cart';
+import { AddToCart } from '../../redux/actions/cart';
 
-const sortItems = [
-  { name: 'rating', order: 'desc'},
-  { name: 'price', order: 'desc'},
-  { name: 'name', order: 'asc'},
+const sortItems: Array<{ name: string, order: string }> = [
+  { name: 'rating', order: 'desc' },
+  { name: 'price', order: 'desc' },
+  { name: 'name', order: 'asc' },
 ];
 
 const Home: React.FC = () => {

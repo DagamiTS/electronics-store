@@ -1,20 +1,6 @@
 import axios from 'axios';
 
-export type Electronics = Array<{
-  id: number,
-  imageUrl: string,
-  name: string,
-  price: number,
-  rating: number,
-  category: string,
-  specification: Object,
-  review: Array<{
-    id: number,
-    title: string,
-    text: string,
-    rating: number
-  }>
-}>;
+export type Electronics = Array<Item>;
 
 export type Item = {
   id: number,
@@ -23,12 +9,13 @@ export type Item = {
   price: number,
   rating: number,
   category: number,
-  specification: Object,
+  specifications: {[key: string]: string},
   review: Array<{
     id: number,
     title: string,
     text: string,
-    rating: number
+    rating: number,
+    name: string,
   }>
 };
 

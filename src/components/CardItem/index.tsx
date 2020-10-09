@@ -1,19 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Bootstrap
 import { Button, Card, Col, Row, OverlayTrigger, Tooltip } from 'react-bootstrap';
 // Images
 import commentSvg from '../../assets/img/comment.svg';
+import StarImage from '../StarImage';
 // Types
 import { Item } from '../../redux/actions/electronics';
-import StarImage from '../StarImage';
 import { ItemInCart } from '../../redux/actions/cart';
+// Styles
+import { Wrapper } from './CardItem.styles';
 
 type Props = {
   item: Item,
   onAddToCart: (obj: ItemInCart) => void
 };
 
-const CartItem: React.FC<Props> = ({item, onAddToCart}) => {
+const CartItem: React.FC<Props> = ({ item, onAddToCart }) => {
   const rating = [];
 
   for (let i = 0; i < Math.floor(item.rating); i++) {
@@ -38,25 +41,26 @@ const CartItem: React.FC<Props> = ({item, onAddToCart}) => {
   };
 
   return (
-    <Col xs={10} sm={6} md={5} lg={4} xl={3} className="m-auto">
+    <Col as={Wrapper} xs={10} sm={6} md={5} lg={4} xl={3}>
       <Card>
         <Card.Img variant="top"
                   src={item.imageUrl} style={{ height: '248px' }} />
         <Card.Body>
           <OverlayTrigger
             placement="bottom"
-            delay={{ show: 250, hide: 400 }}
+            delay={{ show: 150, hide: 200 }}
             overlay={
               <Tooltip id="button-tooltip">
                 {item.name}
               </Tooltip>
             }
           >
-            <Card.Title>{item.name}</Card.Title>
+            <Card.Title as={Link} to={`/item/${item.id}`}>{item.name}</Card.Title>
           </OverlayTrigger>
           <Row className="justify-content-between mb-3">
             <span className="ml-2">{rating.map((val, i) => <StarImage key={i} val={val} />)}</span>
-            <span className="mr-2"><img src={commentSvg} alt="comment icon" /> {item.review.length}</span>
+            <span className="mr-2 commentBlock"><Link to={`/item/${item.id}/reviews`}><img src={commentSvg}
+                                                                              alt="comment icon" />{item.review.length}</Link></span>
           </Row>
           <Row className="justify-content-between">
             <span className="ml-2 price">{item.price} ₴</span>

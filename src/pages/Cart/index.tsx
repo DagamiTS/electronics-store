@@ -14,7 +14,7 @@ const Cart: React.FC = () => {
   const addedProducts = Object.keys(items).map(key => items[key].quantity[0]);
 
   return (
-    <Container fluid style={{ minHeight: '65vh' }}>
+    <Container fluid style={{ minHeight: '66vh' }}>
       <Container>
         <h1>Cart</h1>
         <Row>

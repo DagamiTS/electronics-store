@@ -24,11 +24,14 @@ const Header: React.FC<Props> = ({ categories }) => {
   return (
     <Wrapper>
       <header>
-        <Container fluid className="bg-dark">
+        <Container fluid className="bg-light">
           <Container>
             <Row className="justify-content-between">
               <Link to="/" onClick={() => handleCategory(null)}><img src={logoPng} alt="Logo"
-                                                                     style={{ width: '70px' }} /></Link>
+                                                                     style={{
+                                                                       width: '170px',
+                                                                       paddingTop: '10px'
+                                                                     }} /></Link>
               <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                 <Button variant="outline-success">Search</Button>
@@ -70,11 +73,11 @@ const Header: React.FC<Props> = ({ categories }) => {
               </Link>
             </Row>
             <Row className="justify-content-center">
-              <Navbar bg="dark" expand="lg" variant="dark">
+              <Navbar bg="light" expand="lg" variant="light">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
-                    {categories.map((category: string, index) => <Nav.Link key={category}
+                    {categories.map((category: string, index) => <Nav.Link as={Link} to='/' key={category}
                                                                            onClick={() => handleCategory(index)}
                                                                            style={{ margin: '0 20px 0 20px' }}>{category}</Nav.Link>)}
                   </Nav>
