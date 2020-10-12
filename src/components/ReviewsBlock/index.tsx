@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 // Bootstrap
 import { Button, Col, Row } from 'react-bootstrap';
 // Styles
 import { Wrapper } from './ReviewsBlock.styles';
 // Components
 import ReviewItem from '../ReviewItem';
+import FeedbackForm from '../FeedbackForm';
 
 type Props = {
   reviews: Array<{
@@ -17,12 +18,19 @@ type Props = {
 };
 
 const ReviewsBlock: React.FC<Props> = ({ reviews }) => {
+  const [ leaveFeedbackStatus, setLeaveFeedbackStatus ] = useState(false);
+
+  const handleFeedbackStatus = () => setLeaveFeedbackStatus(true);
+
   return (
     <Row as={Wrapper}>
       <h2>Reviews</h2>
       <Col md={11} className='d-flex flex-column align-items-center m-auto'>
-        <Button variant='warning' size='lg'>Left a feedback</Button>
-        {reviews && reviews.map(review => <ReviewItem key={review.id} review={review} />)}
+        {!leaveFeedbackStatus ?
+          <Button variant='warning' size='lg' onClick={handleFeedbackStatus}>Leave a feedback</Button> :
+          <FeedbackForm onCancel={() => setLeaveFeedbackStatus(false)} />
+        }
+        {!leaveFeedbackStatus && reviews && reviews.map(review => <ReviewItem key={review.id} review={review} />)}
       </Col>
     </Row>
   );

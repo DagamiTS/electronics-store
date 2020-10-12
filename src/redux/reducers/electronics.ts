@@ -17,6 +17,12 @@ const electronics = (state = electronicsInitialState, action: Action) => {
         isLoaded: true
       };
     }
+    case 'SET_LOADING_FALSE': {
+      return {
+        ...state,
+        isLoaded: false,
+      };
+    }
     default: return state;
   }
 };

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCategory } from '../../redux/actions/filters';
 // Bootstrap
-import { Button, Container, Form, FormControl, Nav, Navbar, Row } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, Row } from 'react-bootstrap';
 // Images
 import logoPng from '../../assets/img/logo.png';
 // Styles
@@ -32,10 +32,6 @@ const Header: React.FC<Props> = ({ categories }) => {
                                                                        width: '170px',
                                                                        paddingTop: '10px'
                                                                      }} /></Link>
-              <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-success">Search</Button>
-              </Form>
               <Link to="/cart">
                 <Button variant="danger" size="lg" style={{ margin: '10px' }}>
                   <svg
